@@ -6,17 +6,17 @@
     <title>Document</title>
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
     <script>
-        var socket = io('192.168.1.66:3000',{ transports: ["websocket"] });
-        socket.on('news',function(data){
-            // console.log(data);
-            // document.write(data.greeting);
-            socket.emit('greeting', { response: 'data received' });
-        })
+        // var socket = io('192.168.1.66:3000',{ transports: ["websocket"] });
+        // socket.on('news',function(data){
+        //     // console.log(data);
+        //     // document.write(data.greeting);
+        //     socket.emit('greeting', { response: 'data received' });
+        // })
 
     </script>
 </head>
 <body>
-    <button onclick="test()">click</button>
-    <script src="./js/index.js"></script>
+    <button onclick="create_user('eduardtepanosyan@gmail.com', 'Эдуард')">click</button>
+    <script src="./js/users.js"></script>
 </body>
 </html>
